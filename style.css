@@ -1,0 +1,156 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+  min-height: 80vh;
+  
+    background-image: url("https://cdn.dribbble.com/users/62213/screenshots/3833462/media/6bf1df8d99ed58057796bf543c128507.gif");
+    /*background-color: #000;*/
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    margin-top: 100px;
+    background-color: #f5f1c6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px red;
+}
+
+.welcome {
+    color: #6b6b6b;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.box1{
+width: 100%;
+height: min-content;
+display: flex; /* use display property and justify-content to have some gap b/w input and search button  ,if we don't use display then we can't use the justify content property*/
+justify-content: space-between;
+align-items: center;/*to make items vertically center*/
+}
+
+.box1 input{
+    width: 84%;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #000;
+    background-color: rgb(205, 239, 239);
+    padding:12px 16px ;
+    border-radius: 200px;
+}
+
+.box1 input::placeholder{
+    color: #000;
+}
+
+.box1 button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(224, 239, 239);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.box1 button:hover{
+    color: #fff;
+    background-color: rgb(180, 215, 250);
+}
+
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px; /*gives margin from top and bottom -20px*/
+}
+.weather-body img{
+    width: 60%;  /*60% of the actual width of the image*/
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box .temperature{
+    font-size: 35px;
+    font-weight: 800;/*dark /bold*/
+    position: relative;
+}
+
+.weather-box .temperature sup{
+
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+.weather-box .description{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+.information{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity,.wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.information i{
+    font-size: 30px;
+
+}
+
+.information .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.error{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.error h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+
+.error img{
+    width: 80%;
+}
